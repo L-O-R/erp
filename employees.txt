@@ -1,0 +1,3 @@
+Emp001 | John | Sales | 40000
+Emp002 | Bob | Sales | 20000
+Emp003 | Alice | Sales | 05000
