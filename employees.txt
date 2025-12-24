@@ -1,3 +1,3 @@
-Emp001 | John | Sales | 40000
-Emp002 | Bob | Sales | 20000
-Emp003 | Alice | Sales | 05000
+Emp001 | John | Staff | 40000
+Emp002 | Bob | Staff | 20000 | ASSO02
+Emp003 | Alice | Manager | 50000 | ASH002, Ash003 | 1000
