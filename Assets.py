@@ -1,9 +1,10 @@
 class Assets:
-    def __init__(self,asset_id:str, name: str, value: float, category:str):
+    def __init__(self,asset_id:str, name: str, category:str, value: float):
         self.__asset_id = asset_id
         self.__name = name
-        self.__value = value
         self.__category = category
+        self.__value = value
+
 
     @property
     def asset_id(self):
@@ -28,8 +29,8 @@ class Assets:
         return self.get_details()
 
 class Hardware(Assets):
-    def __init__(self,asset_id:str, name: str, value: float, category:str, condition:str):
-        super().__init__(asset_id, name, value, category)
+    def __init__(self,asset_id:str, name: str, category:str, value: float, condition:str):
+        super().__init__(asset_id, name, category, value)
         self.__condition = condition
 
     @property
@@ -46,8 +47,8 @@ class Hardware(Assets):
         return base_details + f"| condition: {self.get_condition}"
 
 class Software(Assets):
-    def __init__(self, asset_id: str, name: str, value: float, category: str, expiry_date: str):
-        super().__init__(asset_id, name, value, category)
+    def __init__(self, asset_id: str, name: str, category: str,value: float, expiry_date: str):
+        super().__init__(asset_id, name, category, value)
         self.__expiry_date = expiry_date
 
     @property

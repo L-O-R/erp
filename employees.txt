@@ -1,3 +1,0 @@
-Emp001 | John | Staff | 40000
-Emp002 | Bob | Staff | 20000 | ASSO02
-Emp003 | Alice | Manager | 50000 | ASH002, Ash003 | 1000
