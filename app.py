@@ -156,6 +156,6 @@ if __name__ == "__main__":
         exit_requested = main_menu_loop(users,employees, assets)
         if exit_requested:
             print("=" * 50)
-            print("Thank you for using NEXGEN CORPORATE ECOSYSTEM (NCE)")
+            print("Thank you for using  NEXGEN CORPORATE ECOSYSTEM (NCE)")
 
 
