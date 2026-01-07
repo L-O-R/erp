@@ -52,6 +52,17 @@ This is the central Hub => all navigation starts here
 """
 
 
+"""
+    Phase 4 : Employee Crud Operation
+    flow:
+    1. USer selects Manage employees => display the sub menu 
+    2. Add, view, update, delete
+    3. Genrate Unique id
+    4. if user selects 5 option which back to main menu , take it there
+"""
+
+
+
 # phase 1.4
 from read_write import get_details_from_employee, get_details_from_assets, get_details_from_admin
 

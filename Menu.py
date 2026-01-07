@@ -1,6 +1,9 @@
 #========================================
 # phase 3
 #========================================
+from employee_sub_menu import employee_sub_menu
+from input_validation import get_user_choice
+
 
 def display_main_menu(user:dict):
     """
@@ -20,22 +23,6 @@ def display_main_menu(user:dict):
     print("3. Company Financials")
     print("4. Save & Exit")
     print("=" * 50)
-
-def get_user_choice():
-    """
-    Get the user choice and validate it
-
-    :return: user choice
-    """
-    while True:
-        try:
-            choice = int(input("Please select an option: "))
-            if 1 <= choice <= 4:
-                return choice
-            else:
-                print("Invalid choice. Please try again (1-4).")
-        except ValueError:
-            print("Invalid choice. Please Enter a Number (1-4).")
 
 
 def main_menu_loop(users:dict, employees:dict, assets:dict ):
@@ -65,7 +52,7 @@ def main_menu_loop(users:dict, employees:dict, assets:dict ):
         match choice:
             case 1:
                 print("Loading Employees Sub Menu....")
-                # will work on the later part
+                employee_sub_menu(employees)
             case 2:
                 print("Loading Assets Sub Menu....")
             case 3:
